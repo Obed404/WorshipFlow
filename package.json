@@ -1,0 +1,29 @@
+{
+  "name": "worshipflow",
+  "version": "0.1.0",
+  "description": "WorshipFlow — Every song. Every moment. One flow. A full-stack worship song and chord management application.",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"bun --cwd backend dev\" \"bun --cwd frontend dev\"",
+    "build": "concurrently \"bun --cwd backend build\" \"bun --cwd frontend build\"",
+    "test": "concurrently \"bun --cwd backend test\" \"bun --cwd frontend test\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "worship",
+    "chords",
+    "songbook",
+    "music",
+    "transpose",
+    "lyrics",
+    "worshipflow"
+  ],
+  "author": "WorshipFlow Team",
+  "license": "MIT"
+}
